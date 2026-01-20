@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "default",
+  "exclude": ["**/node_modules", "**/dist"],
+  "compilerOptions": {
+    "strict": true,
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "types": ["bun"],
+    "lib": ["esnext"],
+    "moduleDetection": "force",
+    "noUnusedLocals": true,
+    "declaration": true,
+    "verbatimModuleSyntax": true,
+    "baseUrl": ".",
+    "paths": {
+      "#api/*": ["apps/api/src/*"],
+      "#dashboard/*": ["apps/dashboard/src/*"]
+    }
+  }
+}

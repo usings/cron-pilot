@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/@lerna-lite/cli/schemas/lerna-schema.json",
+  "version": "0.0.0",
+  "npmClient": "bun",
+  "useWorkspaces": true,
+  "command": {
+    "version": {
+      "changelog": false,
+      "conventionalCommits": false,
+      "syncWorkspaceLock": true,
+      "forcePublish": true,
+      "tagVersionPrefix": "v",
+      "message": "chore: release %s"
+    }
+  }
+}

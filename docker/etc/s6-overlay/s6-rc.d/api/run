@@ -1,0 +1,5 @@
+#!/command/with-contenv sh
+set -eu
+
+cd /srv/apps/api
+exec bun run serve

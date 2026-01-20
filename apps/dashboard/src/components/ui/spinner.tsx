@@ -1,0 +1,40 @@
+import { cn } from '#dashboard/libs/utils'
+
+function Spinner({ className, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      role="status"
+      aria-label="Loading"
+      className={cn('size-4', className)}
+      {...props}
+    >
+      <rect width="6" height="14" x="1" y="4" fill="currentColor">
+        <animate
+          id="SVG9ovaHbIP"
+          fill="freeze"
+          attributeName="opacity"
+          begin="0;SVGa89dAd4w.end-0.25s"
+          dur="0.75s"
+          values="1;.2"
+        />
+      </rect>
+      <rect width="6" height="14" x="9" y="4" fill="currentColor" opacity=".4">
+        <animate fill="freeze" attributeName="opacity" begin="SVG9ovaHbIP.begin+0.15s" dur="0.75s" values="1;.2" />
+      </rect>
+      <rect width="6" height="14" x="17" y="4" fill="currentColor" opacity=".3">
+        <animate
+          id="SVGa89dAd4w"
+          fill="freeze"
+          attributeName="opacity"
+          begin="SVG9ovaHbIP.begin+0.3s"
+          dur="0.75s"
+          values="1;.2"
+        />
+      </rect>
+    </svg>
+  )
+}
+
+export { Spinner }

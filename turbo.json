@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/turbo/schema.json",
+  "globalDependencies": ["**/.env"],
+  "globalEnv": ["NODE_ENV"],
+  "ui": "stream",
+  "tasks": {
+    "dev": {
+      "inputs": ["$TURBO_DEFAULT$"],
+      "cache": false,
+      "persistent": true
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$"],
+      "outputs": ["dist/**"]
+    },
+    "typecheck": {
+      "dependsOn": ["^typecheck"],
+      "outputs": []
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "ignorePaths": ["node_modules", "dist"],
+  "words": [
+    "arrayify",
+    "buildx",
+    "bullmq",
+    "bunx",
+    "changelogithub",
+    "commitlint",
+    "cronpilot",
+    "elysia",
+    "elysiajs",
+    "esac",
+    "esbuild",
+    "iconify",
+    "lefthook",
+    "nothrow",
+    "pglite",
+    "radashi",
+    "tinyexec",
+    "trixie",
+    "turborepo",
+    "unplugin",
+    "vaul",
+    "VITE"
+  ]
+}

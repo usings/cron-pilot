@@ -1,0 +1,23 @@
+#
+#   Refer for explanation to following link:
+#   https://lefthook.dev/configuration
+#
+output:
+  - summary
+  - success
+  - failure
+  - execution
+
+pre-commit:
+  parallel: true
+  commands:
+    biome-check:
+      run: bunx --bun biome check --no-errors-on-unmatched --write {staged_files}
+      stage_fixed: true
+    type-check:
+      run: bunx --bun turbo typecheck
+
+commit-msg:
+  commands:
+    commitlint:
+      run: bunx --bun commitlint --edit {1}
