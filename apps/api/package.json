@@ -1,6 +1,6 @@
 {
   "name": "@cronpilot/api",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "bun --hot run src/main.ts",
