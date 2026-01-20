@@ -1,4 +1,4 @@
-## Cron Pilot
+<img width="100%" height="100%" alt="Image" src="./.assets/images/screenshot.png" />
 
 A self-hosted cron task manager that provides an API and a web dashboard. It allows you to schedule shell commands using cron expressions, manage task states centrally, and review execution history, runtime metrics, and performance statistics.
 
